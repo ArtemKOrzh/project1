@@ -6,12 +6,12 @@ import requests
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
 	return render_file('index.html')
 
 
-@app.route('/', methods=['POST'])
+@app.route('/')
 def index_post():
 	category = request.form.get('category')
 	image = request.files.get('image')
