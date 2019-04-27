@@ -5,7 +5,7 @@ from flask import jsonify
 app = Flask(__name__)
 
 
-@app.route('/api/save-image/')
+@app.route('/app2/save-image/')
 def add_data_handler():
 	if request.form.get('secret'):
 		category = request.form.get('category')
